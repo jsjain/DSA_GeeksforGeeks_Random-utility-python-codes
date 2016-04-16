@@ -29,7 +29,7 @@ def remov(strn):
                 if(toreplace in f):
                     print(pathname)
                     name1 = f.replace(toreplace, "")
-                    print ("old name: "+ f + "\nnew name:" + name1)
+                    print ("old name: "+ f + "new name:" + name1 + "\n")
                     os.rename(f,name1)
 
             
