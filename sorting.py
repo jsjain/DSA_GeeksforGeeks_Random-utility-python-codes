@@ -1,5 +1,8 @@
+# Implementation of common sorting algorithms
+
 a = [6,9,96,54,3,7,554,5,4,56,554,554]
 
+# bubble sort
 def bubblesort(a):
     n=len(a)
     i=0
@@ -13,6 +16,7 @@ def bubblesort(a):
 
     print a
 
+# Selection sort
 def selectionsort(a):
     k = len(a)
     for i in range(0,k):
@@ -28,6 +32,7 @@ def selectionsort(a):
 # selectionsort([6,9,54,96,3,7,4,554,56])
 
 
+# insertion sort
 def insertionsort(a):
     k = len(a)
 
@@ -42,6 +47,7 @@ def insertionsort(a):
 
 # insertionsort([6,9,96,54,3,7,4,554,56])
 
+# merge sort
 def mergesort(a):
     n = len(a)
     
@@ -49,11 +55,6 @@ def mergesort(a):
         mid = n/2
         left = a[:mid]
         right = a[mid:]
-
-        # for i in range(0,mid):
-        #     left.append(a[i])
-        # for i in range(mid,n):
-        #     right.append(a[i])
 
         mergesort(left)
         mergesort(right)
@@ -81,7 +82,7 @@ def merge(left, right, a):
         k += 1
 
 
-
+# quick sort
 def quicksort(a, start, end):
     if (start < end):
         pindex = hpartition(a, start, end)
