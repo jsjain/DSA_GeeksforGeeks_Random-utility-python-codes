@@ -4,4 +4,5 @@
 2. Geeks for Geeks comptetive coding practice codes
 
 
-You can use it anyway you want do whatever you want to do with it.
+## \m/ No License \m/
+You can use it anyway you want to and whatever you want to do with it.
