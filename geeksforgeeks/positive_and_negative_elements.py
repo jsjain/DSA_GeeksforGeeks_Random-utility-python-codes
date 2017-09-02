@@ -1,7 +1,7 @@
-t = int(raw_input())
+t = int(input())
 while t > 0:
-    n= int(raw_input())
-    arr = map(int, raw_input().split())
+    n= int(input())
+    arr = list(map(int, raw_input().split()))
     pos_arr = []
     neg_arr = []
     for i in range(n):

@@ -1,9 +1,9 @@
 import os
 import re
 
-directory = raw_input('Enter a directory address: \n')
-toreplace = raw_input("enter the pattern to remove:\n")
-foldercheck = raw_input("Do you want to remove this pattern from folder also? Y/N ?\n")
+directory = input('Enter a directory address: \n')
+toreplace = input("enter the pattern to remove:\n")
+foldercheck = input("Do you want to remove this pattern from folder also? Y/N ?\n")
 
 def remov(strn):
     for f in os.listdir(strn) :
@@ -32,5 +32,4 @@ def remov(strn):
                     print ("old name: "+ f + "new name:" + name1 + "\n")
                     os.rename(f,name1)
 
-            
 remov(directory)

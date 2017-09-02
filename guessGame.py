@@ -17,6 +17,9 @@ while(inputNumber != randomNumber):
         if (inputNumber == randomNumber):
             print('correct')
             break
+        
+        else:
+            print("try again!")
 
     except ValueError:
         print('please enter the int')

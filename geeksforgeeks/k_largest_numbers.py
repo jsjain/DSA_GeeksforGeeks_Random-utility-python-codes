@@ -1,9 +1,9 @@
-t = int(raw_input())
+t = int(input())
 while t > 0:
-    n,k = raw_input().split()
+    n,k = input().split()
     n = int(n)
     k = int(k)
-    arr = map(int, raw_input().split())
+    arr = list(map(int, input().split()))
     arr.sort(reverse= True)
     for i in range(k):
         print (arr[i])

@@ -16,11 +16,11 @@ def comparator(a, b):
         else :
             return 0
         
-n = int(raw_input().strip())
+n = int(input().strip())
 unsorted = []
 unsorted_i = 0
 for unsorted_i in xrange(n):
-    unsorted_t = str(raw_input().strip())
+    unsorted_t = str(input().strip())
     unsorted.append(unsorted_t)
 unsorted.sort(comparator)
 for i in unsorted:

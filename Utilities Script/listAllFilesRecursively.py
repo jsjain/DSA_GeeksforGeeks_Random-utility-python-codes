@@ -1,8 +1,8 @@
 import os
 import datetime
 
-directory = raw_input('Enter a directory address: \n')
-foldercheck = raw_input("Do you want to print folder contents also? Y/N ?\n")
+directory = input('Enter a directory address: \n')
+foldercheck = input("Do you want to print folder contents also? Y/N ?\n")
 log = open ("log.txt", "w")
 def listing(strn):
     for f in os.listdir(strn) :
