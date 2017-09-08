@@ -38,7 +38,7 @@ def partition_last(arr, l, r):
 # when pivot element is chosen from median of
 #  first, last and middle element
 def partition_median(arr, l, r):
-    m = 0 if (r - l) == 1 else ((r - l)) / 2 + l
+    m = 0 if (r - l) == 1 else int((r - l)/2) + l
     median = sorted([(arr[l],l), (arr[r],r), (arr[m],m)])[1][1]
     pivot = arr[median]
     arr[median], arr[l] = arr[l], arr[median]
