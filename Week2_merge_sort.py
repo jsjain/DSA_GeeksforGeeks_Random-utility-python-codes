@@ -25,16 +25,14 @@ def merge(left, right, a):
 def mergesort(arr):
     n = len(arr)
     if(n > 1):
-        left = mergesort(arr[:n/2])
-        right = mergesort(arr[n/2:])
+        left = mergesort(arr[:int(n/2)])
+        right = mergesort(arr[int(n/2):])
         merge(left, right, arr)
         return arr
     else:
         return arr
 
 a = [random.randrange(10, 100) for _ in range(0, 10)]
-print ("Before: ")
-print (a)
+print ("Before: ", a)
 a = mergesort(a)
-print("After: ")
-print (a)
+print("After: ", a)
