@@ -2,10 +2,10 @@ def karatsub(x,y):
     if len(str(x)) == 1 or len(str(y)) == 1:
         return x*y
     else:
-        mby2 = max(len(str(x)), len(str(y))) / 2
-        a = x / 10**mby2
+        mby2 = int(max(len(str(x)), len(str(y))) / 2)
+        a = int(x / 10**mby2)
         b = x % 10**mby2
-        c = y / 10**mby2
+        c = int(y / 10**mby2)
         d = y % 10**mby2
         ac = karatsub(a,c)
         bd = karatsub(b,d)
