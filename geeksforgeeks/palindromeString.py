@@ -1,6 +1,6 @@
 def checkPalindrome(half_length, n, s):
-    for i in range(half_len):
-        if(s[i] != s[n - i - 1]):
+    for i in range(half_length):
+        if (s[i] != s[n - i - 1]):
             return False
     return True
 
@@ -11,7 +11,7 @@ while (t > 0):
     s = input()
 
     half_len = n // 2
-    if(checkPalindrome(half_len, n, s)):
+    if (checkPalindrome(half_len, n, s)):
         print("Yes")
     else:
         print("No")

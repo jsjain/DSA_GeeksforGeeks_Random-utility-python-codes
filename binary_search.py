@@ -16,4 +16,4 @@ n = int(raw_input())
 arr = map(int, raw_input().split(" "))
 
 index = binary_search(arr, 0, n-1, v)
-print index
+print(index)
