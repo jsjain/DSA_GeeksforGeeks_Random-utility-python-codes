@@ -26,7 +26,7 @@ def merge(left, right, a):
 
 def mergesort(arr):
     n = len(arr)
-    if (n > 1):
+    if n > 1:
         left = mergesort(arr[:int(n / 2)])
         right = mergesort(arr[int(n / 2):])
         merge(left, right, arr)
