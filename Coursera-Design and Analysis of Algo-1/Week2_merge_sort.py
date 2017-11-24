@@ -5,9 +5,8 @@ def merge(left, right, a):
     i = j = k = 0
     lenl = len(left)
     lenr = len(right)
-    n = len(a)
     while i < lenl and j < lenr:
-        if (left[i] < right[j]):
+        if left[i] < right[j]:
             a[k] = left[i]
             i += 1
         else:
