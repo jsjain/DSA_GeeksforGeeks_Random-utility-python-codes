@@ -10,7 +10,7 @@ class Graph:
 
     def DFSUtil(self, v, visited):
         visited[v] = True
-        print(v, sep='->', end=' ')
+        print(v, end=' ')
 
         for i in self.graph[v]:
             if visited[i] is False:
